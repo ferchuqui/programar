@@ -7,6 +7,8 @@ function seleccionarMascotaJugador() {
     let inputHipodoge = document.getElementById('hipodoge')
     let inputCapipepo = document.getElementById('capipepo')
     let inputRatigueya = document.getElementById('ratigueya')
+    let spanMascotaJugador=document.getElementById('mascota-jugador')
+
     if (inputHipodoge.checked){
       alert('Seleccionaste a Hipodoge')
     } else if (inputCapipepo.checked){
