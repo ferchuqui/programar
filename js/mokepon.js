@@ -67,9 +67,15 @@ function seleccionarMascotaJugador() {
     crearMensaje()
   }
 
-  function crearMensaje(){
-    let parrafo = document.createElement('p')
-    parrafo.innerHTML = 'Tu mascota atacó con ´ + ataqueJugador +', las mascotas del enemigo atacó con  ' + ataqueEnemigo + '  Ganaste
+  function crearMensaje() {
+    let sectionMensajes = document.getElementById("mensajes");
+    let parrafo = document.createElement("p");
+    parrafo.innerHTML =
+      "Tu mascota atacó con " +
+      ataqueJugador +
+      ", las mascota del enemigo atacó con " +
+      ataqueEnemigo
+    sectionMensajes.appendChild(parrafo)
   }
 
   function aleatorio(min, max){
