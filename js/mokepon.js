@@ -3,6 +3,9 @@ let ataqueEnemigo;
 let vidasJugador = 3;
 let vidasEnemigo = 3;
 function iniciarJuego() {
+  let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
+  sectionSeleccionarAtaque.style.display = 'none'
+
   let botonMascotaJugador = document.getElementById("boton-mascota");
   botonMascotaJugador.addEventListener("click", seleccionarMascotaJugador);
   let botonFuego = document.getElementById("boton-fuego");
