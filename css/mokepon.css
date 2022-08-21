@@ -11,3 +11,13 @@
   flex-direction: column;
   justify-content: center;
 }
+.tarjeta-de-mokepon{
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  padding: 10px;
+  box-sizing: border-box;
+}
+input{
+  display: none;
+}
