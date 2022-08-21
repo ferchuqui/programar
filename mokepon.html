@@ -5,21 +5,37 @@
     <title>MOKEPON!</title>
     <script src="./js/mokepon.js"></script>
     <link rel="stylesheet" href="css/mokepon.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
   </head>
   <body>
     <section id="seleccionar-mascota">
-      <h1>MOKEPON! 🔥💧🌱</h1>
-      <h2>Elige tu mascota:</h2>
-      <label class="tarjeta-de-mokepon" for="hipodoge">Hipodoge</label>
-      <input type="radio" name="mascota" id="hipodoge" />
-      <label class="tarjeta-de-mokepon" for="capipepo">Capipepo</label>
-      <input type="radio" name="mascota" id="capipepo" />
-      <label class="tarjeta-de-mokepon" for="ratigueya">Ratigueya</label>
-      <input type="radio" name="mascota" id="ratigueya" />
-      <button id="boton-mascota">Seleccionar</button>
+      <h1 class="titulo">Mokepon</h1>
+      <h2 class="subtitulo">Elige tu mascota:</h2>
+      <div class="tarjetas">
+          <label class="tarjeta-de-mokepon" for="hipodoge">
+            <p>Hipodoge</p>
+            <img src="images/mokepons_mokepon_hipodoge_attack.png" alt="Hipodoge"/>
+          </label>
+          <input type="radio" name="mascota" id="hipodoge" />
+          <label class="tarjeta-de-mokepon" for="capipepo">
+            <p>Capipepo</p>
+            <img src="images/mokepons_mokepon_capipepo_attack.png" alt="Capipepo"/>
+          </label>
+          <input type="radio" name="mascota" id="capipepo" />
+          <label class="tarjeta-de-mokepon" for="ratigueya">
+            <p>Ratigueya</p>
+            <img src="images/mokepons_mokepon_ratigueya_attack.png"/>
+          </label>
+          <input type="radio" name="mascota" id="ratigueya" />
+      </div>
+
+      <button class="btn btn-primary"id="boton-mascota">Seleccionar</button>
     </section>
     <section id="seleccionar-ataque">
-      <h1>MOKEPON! 🔥💧🌱</h1>
+      <h1>Mokepon</h1>
       <h2>Elige tu ataque:</h2>
       <p>
         Tu mascota <span id="mascota-jugador"></span> tiene
@@ -39,5 +55,6 @@
     <section id="reiniciar">
       <button id="boton-reiniciar">Reiniciar</button>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
